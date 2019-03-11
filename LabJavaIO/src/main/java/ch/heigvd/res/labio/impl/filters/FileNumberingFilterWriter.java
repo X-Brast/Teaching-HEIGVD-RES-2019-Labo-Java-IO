@@ -22,7 +22,6 @@ public class FileNumberingFilterWriter extends FilterWriter {
   private int counter = 1;
   private boolean first = true;
   private boolean slashR = false;
-  private boolean slashN = false;
 
   public FileNumberingFilterWriter(Writer out) {
     super(out);
