@@ -130,13 +130,13 @@ public class Application implements IApplication {
     String path = WORKSPACE_DIRECTORY;
 
     for(String tag : quote.getTags())
-      path += '/' + tag;
+      path += File.separator + tag;
 
     File file = new File(path);
 
     file.mkdirs();
 
-    path += '/' + filename;
+    path += File.separator + filename;
 
     OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(path), Charsets.UTF_8);
     writer.write(quote.getQuote());
