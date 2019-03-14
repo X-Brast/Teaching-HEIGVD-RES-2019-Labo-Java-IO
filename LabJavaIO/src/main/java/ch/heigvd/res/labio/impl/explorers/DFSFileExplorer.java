@@ -32,7 +32,7 @@ public class DFSFileExplorer implements IFileExplorer {
       if(file.isDirectory())
         explore(file, vistor);
 
-      else if(file.isFile())
+      if(file.isFile())
         vistor.visit(file);
     }
   }
